@@ -5,7 +5,7 @@ from src import tasks_to_be_run
 
 
 
-msg = '''Love It? Star It! ⭐ https://github.com/omkarcloud/google-maps-scraper/'''
+msg = "Love It? Star It!  https://github.com/thomasgottvalles/GMBot"
 
 def print_pro_bot():
     global msg

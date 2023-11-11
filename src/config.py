@@ -1,11 +1,11 @@
 '''
-Love It? Star It! ⭐ https://github.com/omkarcloud/google-maps-scraper/
+Love It? Star It!  https://github.com/thomasgottvalles/GMBot
 '''
 queries = [
     {
-        "keyword": "restaurants in delhi",
-        "max_results" : 5,
+        "keyword": "restaurants Montpellier",
+        "max_results" : 10,
     },
 ]
 
-number_of_scrapers = 16
+number_of_scrapers = 1
