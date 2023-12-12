@@ -12,15 +12,17 @@ from scrapy import signals
 
 class EmailScraper(CrawlSpider):
     name = 'emailscraper'
-    #handle_httpstatus_list = [404,410,301,500]
-    custom_settings = {'HTTPERROR_ALLOW_ALL': True}
+    custom_settings = { 'HTTPERROR_ALLOW_ALL': True,
+                        'DEPTH_LIMIT': 3,
+                        'CLOSESPIDER_PAGECOUNT': 30}
 
     def __init__(self, domain=None, *args, **kwargs):
         self.start_urls = ['http://' + domain]
         self.target_domain = domain
+        self.allowed_domains = [domain]
         self.rules = [
             Rule(
-                LinkExtractor(allow_domains=self.target_domain), 
+                LinkExtractor(), 
                 callback='parse_page',
                 follow=True)
         ]
@@ -30,11 +32,11 @@ class EmailScraper(CrawlSpider):
         super(EmailScraper, self).__init__(*args, **kwargs)
         
     def parse_page(self, response):
-        item_page = PageItems()
-        item_page['url'] = response.url
-        item_page['status'] = response.status
         url_extracted = extract(response.url)
         if self.target_domain == '{}.{}'.format(url_extracted.domain, url_extracted.suffix):
+            item_page = PageItems()
+            item_page['url'] = response.url
+            item_page['status'] = response.status
             item_page['emails'] = self.parse_emails(response)
         yield item_page    
                 
