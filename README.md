@@ -1,39 +1,16 @@
-<p align="center">
-  <img src="https://www.omkar.cloud/images/favicon/prod/favicon-256x256.png" alt="omkar" />
-</p>
-  <div align="center" style="margin-top: 0;">
-  <h1>✨ Google Maps Scraper 🤖</h1>
-  <p>💦 Enjoy the Rain of Google Maps Leads 💦</p>
-</div>
-<em>
-  <h5 align="center">(Programming Language - Python 3)</h5>
-</em>
-<p align="center">
-  <a href="#">
-    <img alt="google-maps-scraper forks" src="https://img.shields.io/github/forks/omkarcloud/google-maps-scraper?style=for-the-badge" />
-  </a>
-  <a href="#">
-    <img alt="Repo stars" src="https://img.shields.io/github/stars/omkarcloud/google-maps-scraper?style=for-the-badge&color=yellow" />
-  </a>
-  <a href="#">
-    <img alt="google-maps-scraper License" src="https://img.shields.io/github/license/omkarcloud/google-maps-scraper?color=orange&style=for-the-badge" />
-  </a>
-  <a href="https://github.com/omkarcloud/google-maps-scraper/issues">
-    <img alt="issues" src="https://img.shields.io/github/issues/omkarcloud/google-maps-scraper?color=purple&style=for-the-badge" />
-  </a>
-</p>
-<p align="center">
-  <img src="https://views.whatilearened.today/views/github/omkarcloud/google-maps-scraper.svg" width="80px" height="28px" alt="View" />
-</p>
+# <p align="center">GMBot</p>
 
----
+🌟 Get 120 Leads in 2.5 Minutes!
 
-🌟 Get 120 Leads in 2.5 Minutes! 🤖
+This Python program is a bot designed to explore establishments on Google Maps, extract data from each establishment and store it for later use in a JSON and CSV file. Added value of the fork: the establishments websites are then explored with Scrapy in order to extract and store email addresses.
 
+In versions before the commits September 4, 2023 of the original repository (Google Maps Scraper) that I forked, it is not possible to extract email addresses. This is why I developed an extension (Scrapy) to extract email addresses on establishment websites. For this to work, it is important to define `website` in the `select` key or all fields (Default) in the specific fields of the configuration file. Read more in "How to select specific Fields?" for more details.
+
+For those who don't know Scrapy, it's a Python framework that allows you to extract data from the web : 
 
 ## 🌟 Overview
 
-Welcome to the Google Maps Scraper, a powerful scraper designed to scrape up to 1200 Google Map Leads in just 25 minutes. Its Top Features are:
+Welcome to the GMBot, a powerful scraper designed to scrape up to 1200 Google Map Leads in just 25 minutes. Its Top Features are:
 
 1. Scrapes **1200** Google Map Leads in just **25** minutes giving you lots of prospects to make potential sales.
 2. Scrapes **30** Data Points including website, phone, category, owner, geo-coordinates, and **26** more data points. Even the ones that are not publicly shown in Google Maps, so you have all the data you need.
@@ -41,7 +18,6 @@ Welcome to the Google Maps Scraper, a powerful scraper designed to scrape up to 
 4. You can scrape multiple queries in one go.
 5. Scrapes Data in Real Time, so you have the latest data.
 6. Saves Data as both JSON and CSV for easy usage.
-
 
 The Table below shows the most important data points that will be generated in both CSV and JSON formats:
 
@@ -53,23 +29,29 @@ The Table below shows the most important data points that will be generated in b
 |Kiyan                |4.7   |639              |NH-8, Samalkha, New Delhi, Delhi 110037                                                                                    |http://www.roseatehotels.com/newdelhi/theroseate/dine/kiyan/                            |1130158676 |https://lh5.googleusercontent.com/p/AF1QipM_HsL2Xojc7nHdzW14rV2Cv3joGalRODYx2fZF=w408-h278-k-no|https://www.google.com/maps/place/Kiyan/data=!4m7!3m6!1s0x390d1c07eff4422b:0x8abf827be567fe7e!8m2!3d28.531523!4d77.103096!16s%2Fg%2F1pwfbhfv9!19sChIJK0L07wccDTkRfv5n5XuCv4o?authuser=0&hl=en&rclk=1                 |Fine dining restaurant|ChIJK0L07wccDTkRfv5n5XuCv4o|Fine dining restaurant, Breakfast restaurant, Continental restaurant, European restaurant, Mughlai Restaurant, North Indian Restaurant, Thai restaurant|
 |Thyme Restaurant - The Umrao|4.5   |555              |National Highway 8, Rajokri Rd, D Block, Samalkha, Pushpanjali Farms, New Delhi, Delhi 110037                              |https://theumrao.com/dining                                                             |1147707050 |https://lh5.googleusercontent.com/p/AF1QipPhEscYrXx_m8po3qEbaeA54iOslEhRA2CXgP_Y=w408-h247-k-no|https://www.google.com/maps/place/Thyme+Restaurant+-+The+Umrao/data=!4m7!3m6!1s0x390d1bfec9e42687:0x14d497d545bba4b!8m2!3d28.525558!4d77.098439!16s%2Fg%2F11b5wq57rd!19sChIJhybkyf4bDTkRS7pbVH1JTQE?authuser=0&hl=en&rclk=1|Fine dining restaurant|ChIJhybkyf4bDTkRS7pbVH1JTQE|Fine dining restaurant, Breakfast restaurant, Chinese restaurant, Continental restaurant                          |
 
-## 🚀 Getting Started
+## 🛠️ Installation and execution
+To work, this fork requires Python 3 and Scrapy 2.
 
-_If you are not a techy person or don't know how to use git. You can follow [this video](https://www.youtube.com/watch?v=zOlvYakogSU) to make bot run._
-
-Let's get started by generating Google Maps Leads by following these simple steps
-
-1️⃣ Clone the Magic 🧙‍♀️:
-```shell
-git clone https://github.com/omkarcloud/google-maps-scraper
-cd google-maps-scraper
+To install Python 3, go to the [official Python documentation](https://docs.python.org/fr/3/using/index.html).  To install Pip, also go to the [official Pip documentation](https://pip.pypa.io/en/stable/installation/). Since Python 3.4, it is included by default with the Python installer. Next in your console: 
 ```
-2️⃣ Install Dependencies 📦:
-```shell
+pip install Scrapy
+```
+
+Next, let's get started by generating Google Maps Leads by following these simple steps.
+
+Clone the Magic :
+```
+git clone https://github.com/thomasgottvalles/GMBot
+cd GMbot
+```
+
+Install Dependencies :
+```
 python -m pip install -r requirements.txt
 ```
-3️⃣ Let the Rain of Google Map Leads Begin 😎:
-```shell
+
+Let the Rain of Google Map Leads Begin :
+```
 python main.py
 ```
 
@@ -77,19 +59,13 @@ Once the scraping process is complete, you can find your leads in the `output` d
 
 ![Google Maps Data Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/gmap_result.png)
 
-## Video Demo 
-
-Watch this video to see the bot in action!
-
-[![Google Maps Video Tutorial](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/video.png)](https://www.youtube.com/watch?v=zOlvYakogSU)
-
 ## 🤔 FAQs
 
-### ❓ The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
+### The scraper is only retrieving 5 results. How can I scrape all Google Maps search results?
 A: Open the file `src/config.py` and comment out the line that sets the `max_results` parameter. 
 
 By doing so, you can scrape all the search results from Google Maps. For example, to scrape all restaurants in Delhi, modify the code as follows:
-```python
+```
 queries = [
     {
         "keyword": "restaurants in delhi",
@@ -99,11 +75,11 @@ queries = [
 ```
 Note: You will be able to scrape up to 120 leads per search due to Google's scrolling limitation. 
 
-### ❓ I want to scrape search results for a specific search query. How can I achieve that?
+### I want to scrape search results for a specific search query. How can I achieve that?
 A: Open the file `src/config.py` and update the `keyword` with your desired search query. 
 
 For example, if you want to scrape data about stupas in Kathmandu 🇳🇵, modify the code as follows:
-```python
+```
 queries = [
     {
         "keyword": "stupas in kathmandu",
@@ -111,8 +87,7 @@ queries = [
 ]
 ```
 
-
-### ❓ How can I filter google map search results?
+### How can I filter google map search results?
 
 A: You have the option to apply filters to your Google Maps search results using the following parameters:
 
@@ -122,12 +97,11 @@ A: You have the option to apply filters to your Google Maps search results using
 4. has_phone
 5. has_website
 
-
 To specify filters, open `src/config.py` and specify your filters. 
 
 The Following example will scrape only those listings with a minimum of 5 reviews, a maximum of 100 reviews, and a phone number.
 
-```python
+```
 queries = [
     {
         "keyword": "restaurants in delhi",
@@ -138,8 +112,7 @@ queries = [
 ]
 ```
 
-
-### ❓ How to sort by reviews, rating, or title?
+### How to sort by reviews, rating, or title?
 
 To sort your results by reviews, rating, or title, follow these steps:
 
@@ -147,7 +120,7 @@ Open the file `src/config.py` and set the `sort` key.
 
 For example, to sort by reviews in descending order, modify the code as follows:
 
-```python
+```
 queries = [
     {
         "keyword": "stupas in kathmandu",
@@ -162,7 +135,7 @@ queries = [
 You can sort by any field, such as `reviews`, `main_category`, `title`, `rating`, or any other field. Here are some common sort examples:
 
 1. Sort by `reviews` count in descending order:
-```python
+```
         "sort": {
             "by": "reviews",
             "order": "desc",
@@ -170,7 +143,7 @@ You can sort by any field, such as `reviews`, `main_category`, `title`, `rating`
 ```
 
 2. Sort by `main_category` in ascending order:
-```python
+```
         "sort": {
             "by": "main_category",
             "order": "asc",
@@ -178,7 +151,7 @@ You can sort by any field, such as `reviews`, `main_category`, `title`, `rating`
 ```
 
 3. Sort by `title` in ascending order:
-```python
+```
         "sort": {
             "by": "title",
             "order": "asc",
@@ -186,14 +159,14 @@ You can sort by any field, such as `reviews`, `main_category`, `title`, `rating`
 ```
 
 4. Sort by `rating` in descending order:
-```python
+```
         "sort": {
             "by": "rating",
             "order": "desc",
         },
 ```
 
-### ❓ How to select specific Fields?
+### How to select specific Fields?
 If you want to select specific fields to be output in your CSV and JSON files, you can do so by following these steps:
 
 1.  Open `src/config.py`.
@@ -201,7 +174,7 @@ If you want to select specific fields to be output in your CSV and JSON files, y
 
 For example, if you want to select "title", "link", "main_category", "rating", "reviews", "website", "phone", and "address", you should adjust the code as follows:
 
-```python
+```
 queries = [
     {
         "keyword": "stupas in kathmandu",
@@ -213,17 +186,16 @@ queries = [
 You are free to select any field. Here are a couple of common field selections:
 
 1. Standard field selection:
-```python
+```
         "select": ["title", "link", "main_category", "rating", "reviews",  "website", "phone" , "address"],
 ```
 
 2. Selection of all fields (Default):
-```python
+```
         "select": "ALL",
 ```
 
-
-### ❓ How to increase the speed of the Scraper?
+### How to increase the speed of the Scraper?
 
 To boost the scraping speed, the scraper launches multiple browsers simultaneously. Here's how you can increase the speed furthur:
 
@@ -241,12 +213,11 @@ In case you encounter any issues, like the scraper crashing due to low-end PC sp
 
 Additionally, consider improving your internet speed to further enhance the scraping process.
 
-
-### ❓ Can I scrape more than one query using this script?
+### Can I scrape more than one query using this script?
 A: Absolutely! Open `src/config.py` and add as many queries as you like. 
 
 For example, if you want to scrape restaurants in both Delhi 😎 and Bangalore 👨‍💻, use the following code:
-```python
+```
 queries = [
     {
         "keyword": "restaurants in delhi",
@@ -257,12 +228,11 @@ queries = [
 ]
 ```
 
-
-### ❓ How to scrape emails and social links like Twitter and Facebook of Shop Owners?
+### How to scrape emails and social links like Twitter and Facebook of Shop Owners?
 
 Google Maps does not display the emails and social links of shop owners. However, it does show the owner's Google profile, which we scrape and store in the `owner` field as shown below:
 
-```json
+```
         "owner": {
             "id": "102395794819517641473",
             "link": "https://www.google.com/maps/contrib/102395794819517641473",
@@ -273,14 +243,11 @@ Google Maps does not display the emails and social links of shop owners. However
 To obtain the shop owner's emails and social links, you have two options:
 
 1. Visit the website of each shop and manually find the contact details.
-2. Use the Contact Details Scraper by vdrmota, available [here](https://www.omkar.cloud/l/contact-info-scraper/), to automatically scrape the contact details.
+2. define `website` in the `select` key or all fields (Default) in the specific fields of the configuration file. Read more in "How to select specific Fields?" for more details. 
 
-If you are using the Google Maps Scraper for prospecting and selling your products or services, it is recommended to manually visit the first 100 lead's websites. This will provide you with a better understanding of your prospects. Also, the task of finding contact details from 100 websites, can be done within 2 hours if you work with focus and speed.
+If you are using the GMBot for prospecting and selling your products or services, it is recommended to manually visit the first 100 lead's websites. This will provide you with a better understanding of your prospects. Also, the task of finding contact details from 100 websites, can be done within 2 hours if you work with focus and speed.
 
-Once you have validated the success of your Google Maps scraper strategy, you can scale up your efforts using the [Contact Details Scraper](https://www.omkar.cloud/l/contact-info-scraper/), which is also quite affordable.
-
-
-### ❓ How much time does it take to scrape "n" searches?
+### How much time does it take to scrape "n" searches?
 
 On average, each Google Maps search gives 120 listings. It takes approximately 2.5 minutes to scrape these 120 listings.
 
@@ -292,7 +259,7 @@ For example, if you want to scrape 10 google map queries or 1200 listings, it wi
 
 ![](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/search-time.png)
 
-### ❓ How can I utilize the data obtained from Google Maps?
+### How can I utilize the data obtained from Google Maps?
 A: Most people scrape Google Maps Listings to sell things!
 
 For example, you can search for restaurants in Amritsar and pitch your web development services to them.
@@ -301,10 +268,20 @@ You can also find real estate listings in Delhi and promote your exceptional rea
 
 Google Maps is seriously a great platform to find B2B customers to sell things to!
 
-## Giving Without Expectation
 
-*Would you help a complete stranger if it didn’t cost money and you didn’t get any credit?*
+## 🍰 Contribution
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you answered yes, I want to ask to star our repository ⭐ at https://github.com/omkarcloud/google-maps-scraper/, it will help one more entrepreneur like you change their life for the better :)
+Contact me for any contribution request.
 
-[![Stargazers for @omkarcloud/google-maps-scraper](https://reporoster.com/stars/omkarcloud/google-maps-scraper)](https://github.com/omkarcloud/google-maps-scraper/stargazers)
+## 📝 Licence
+GMBot is Open Source software distributed under a single license: [MIT License](https://opensource.org/license/mit). As such, GMBot can freely be **used, analyzed, modified and redistributed** under the MIT License.
+
+## 🧑 Author
+Thomas Gottvalles at 
+[Tesseract IT - L'agence 100% WEB ](https://tesseract-it.com)
+
+## 🏄 Have fun
+"Si vous voulez que quelque chose soit bien fait, faites-le vous-même"
+"If you want something done right, do it yourself"
+        Napoléon Bonaparte.
